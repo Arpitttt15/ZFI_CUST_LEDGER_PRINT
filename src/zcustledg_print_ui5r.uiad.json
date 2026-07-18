@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Customer Ledger Print"
+  },
+  "ui5AppDetails": {
+    "appId": "zcustledgprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C97DAB628EE20B59EAC182ADFC3983246DADFCFA_TM",
+    "semanticObject": "zcust_ledg_print",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C97DAB628EE20B59EAC182ADFC3983246DADFCFA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Customer Ledger Print"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defination for customer ledger'
+define service ZSD_CUSTOMER_LEDGER {
+  expose ZCE_CUSTOMER;
+}

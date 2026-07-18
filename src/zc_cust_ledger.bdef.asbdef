@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_CUST_LEDGER alias ZI_CUST_LEDGER_DOC
+{
+  use update;
+
+  use action ZPRINT;
+}

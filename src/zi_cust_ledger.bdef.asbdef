@@ -1,0 +1,22 @@
+managed implementation in class zbp_i_cust_ledger unique;
+strict ( 2 );
+
+define behavior for ZI_CUST_LEDGER alias ZI_CUST_LEDGER_DOC
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  action ( features : instance ) ZPRINT parameter zdd_dates result [1] $self;
+  update;
+
+  field ( readonly ) Customer;
+  mapping for ztb_cust_ledger
+    {
+      Customer     = customer;
+      CustomerName = customer_name;
+      base64       = base64;
+      m_ind        = m_ind;
+    }
+}
